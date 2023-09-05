@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+
+#card #titulo {
+  position: fixed;
+  top: 18rem;
+  pointer-events: none;
+  font-size: 0.9rem;
+  
+  
+}
+
+#card #botao {
+  position: fixed;
+  top: 13.4rem;
+  width: 6rem;
+  opacity: 0;
+  
+  
+}
+#card #poster:hover ~ #botao{
+  opacity: 1;
+  pointer-events: none;
+}
+
+#card #poster:hover {
+  opacity: 0.2;
+}
+#card #poster:hover ~ #titulo{
+  opacity: 0.2;
+}
+

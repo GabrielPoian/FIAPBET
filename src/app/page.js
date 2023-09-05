@@ -7,9 +7,14 @@ export default function Home() {
 
   const jogos=[
     {
-      poster:"https://apksos.com/storage/images/app/gatesofolympus/demoyuk/app.gatesofolympus.demoyuk_1.png"
+      titulo: "Gates Of Olympus",
+      poster:"https://d3fwl9ttzumvxe.cloudfront.net/games/29d8559e14cc09c33509d4e455e4ada8.png"
      },{
-     poster:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQimU1pCkPmF_NmX5giN2IIY61G17beOPeCpXjnbUnOVxqSfap1yZcNHkiZbZeTKHFYAlc&usqp=CAU"
+     titulo: "Wanted",
+     poster:"https://d3fwl9ttzumvxe.cloudfront.net/games/5a5d845753ef6830f55330a7986ee11e.png"
+     },{
+      titulo:"Sweet Bonanza", 
+      poster:"https://d3fwl9ttzumvxe.cloudfront.net/games/c77fa594da0490f2c298f9a9f518266b.png"
      }
 
   ]
@@ -28,7 +33,7 @@ export default function Home() {
     <Title>Em Alta</Title>
 
       <section className='flex flex-wrap'>
-      {jogos.map((filme)=> <CardFilme filme={filme}/>
+      {jogos.map((jogo)=> <CardFilme jogo={jogo}/>
         
       )}
       
