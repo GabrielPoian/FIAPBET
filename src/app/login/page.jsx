@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Target } from "lucide";
 import {useRouter} from "next/navigation";
 import { Toaster } from "react-hot-toast";
+import { serverLogin } from "@/actions/user";
 
 
 export default function Login(){
@@ -18,6 +19,8 @@ const {push} = useRouter()
     function login(e){
     e.preventDefault()
     if (email == "gabrielppoian@gmail.com" && senha=="123"){
+        serverLogin()
+        push("/")
     }else{
         toast.error("dados invalido")
     }

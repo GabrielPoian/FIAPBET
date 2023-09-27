@@ -1,5 +1,6 @@
 import CardFilme from '@/components/CardFilm'
 import Title from '@/components/Title'
+import NavBar from '@/components/navbar'
 import Image from 'next/image'
 
 async function carregarJogos(){
@@ -13,20 +14,15 @@ async function carregarJogos(){
 
 export default async function Home() {
   
-  
+
 
   const jogos= await carregarJogos()
  
+
   return (
   <>
-    <nav className="flex p-4 bg-zinc-950">
-      <ul className="flex gap-20">
-          <a href='#'>FiapBet</a>
-        <li>
-        <a href='#'>Favoritos</a>
-        </li>
-      </ul>
-    </nav>
+  <NavBar />
+
     <Title>Em Alta</Title>
 
       <section className='flex flex-wrap'>
